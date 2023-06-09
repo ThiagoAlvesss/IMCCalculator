@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="assets/images/undraw_personal_trainer_re_cnua.svg" alt="">
+        </section>
+        <section id="calculator">
+            <form id="form">
+
+                <h1 id="title">Calcule seu IMC</h1>
+
+                <div class="input-box">
+                    <label for="weight">Peso (Kg)</label>
+                    <div class="input-field">
+                        <input type="text" inputmode="numeric" id="weight" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">Altura (m)</label>
+                    <div class="input-field">
+                        <input type="text" inputmode="numeric" id="height" required>
+                        <span>m</span>
+                    </div>
+                </div>
+                <button id="calculate">Calcular</button>
+            </form>
+            <div id="info" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
